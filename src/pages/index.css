@@ -1,0 +1,156 @@
+/* body{
+    background: linear-gradient(to bottom, #8d8888 17%, #272323 100%); 
+} */
+
+body{
+    background-image: url('https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?cs=srgb&dl=pexels-daniel-reche-3721941.jpg&fm=jpg');
+    background-size: cover;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/* HIJO 1 */
+
+.div1 {
+  grid-area: 1 / 1 / 5 / 4;
+  background-image: url("https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?cs=srgb&dl=pexels-garrett-morrow-1649771.jpg&fm=jpg");
+  background-size: 100% 150%;
+}
+
+.angry-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%;
+}
+
+#item-0 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+  margin-left: 1em;
+  color: white;
+}
+#item-1 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 3;
+  margin-left: 1em;
+  color: gray;
+}
+#item-2 {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 2;
+  grid-column-end: 4;
+  margin-left: 1em;
+  color: gray;
+}
+#item-3 {
+  background-color: #353034b6;
+  grid-row-start: 1;
+  grid-column-start: 5;
+  grid-row-end: 2;
+  grid-column-end: 6;
+  width: 75%;
+  height: 45%;
+  margin: auto;
+  border-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+/* HIJO 2 */
+
+.div2 {
+  grid-area: 5 / 1 / 6 / 4;
+  text-align: center;
+  color: #8d8888;
+}
+
+/* HIJOS DEL 3 AL 5 */
+
+.div3 {
+  grid-area: 6 / 1 / 9 / 2;
+  text-align: center;
+}
+.div4 {
+  grid-area: 6 / 2 / 9 / 3;
+  text-align: center;
+}
+
+.div5 {
+  grid-area: 6 / 3 / 9 / 4;
+  text-align: center;
+}
+
+.parentCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  color: #8d8888;
+  
+}
+
+.div1Img {
+  grid-area: 1 / 1 / 4 / 4;
+  background-image: url("https://images.pexels.com/photos/1320724/pexels-photo-1320724.jpeg?cs=srgb&dl=pexels-aman-bhatnagar-1320724.jpg&fm=jpg");
+  background-size: 100% 100%;
+  margin: 20px;
+}
+.div2Text {
+  grid-area: 4 / 1 / 5 / 4;
+}
+
+.div2Img {
+  grid-area: 1 / 1 / 4 / 4;
+  background-image: url("https://images.pexels.com/photos/128611/pexels-photo-128611.jpeg?cs=srgb&dl=pexels-nao-triponez-128611.jpg&fm=jpg");
+  background-size: 100% 100%;
+  margin: 20px;
+}
+.div3Text {
+  grid-area: 4 / 1 / 5 / 4;
+}
+
+.div3Img {
+  grid-area: 1 / 1 / 4 / 4;
+  background-image: url("https://images.pexels.com/photos/3394656/pexels-photo-3394656.jpeg?cs=srgb&dl=pexels-sound-on-3394656.jpg&fm=jpg");
+  background-size: 100% 100%;
+  margin: 20px;
+}
+.div4Text {
+  grid-area: 4 / 1 / 5 / 4;
+}
+
+/* HIJOS 6 Y 7 */
+
+.div6 {
+  grid-area: 9 / 1 / 10 / 4;
+  justify-self: center;
+  font-size: smaller;  color: #8d8888;
+}
+.div7 {
+  grid-area: 10 / 2 / 11 / 3;
+  justify-self: center;
+}
+
+.btn-contact {
+  background-color: #353034b6;
+  border-color: gray;
+  color: white;
+  width: 100%;
+  height: 37%;
+  border-radius: 5px;
+  cursor: pointer;
+}
