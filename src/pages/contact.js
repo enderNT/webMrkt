@@ -32,7 +32,7 @@ const contact = () => {
     return (
     <div>
         <Boton><Link to='/'>Inicio</Link></Boton>
-        <h1>Formulario de contacto</h1>
+        <h1>Formulario de contacto.</h1>
         <form onSubmit={(e) => e.preventDefault(e)}>
             <Label>Nombre:</Label>
             <Input type="text" name="nombre" placeholder='FirstName'/>
